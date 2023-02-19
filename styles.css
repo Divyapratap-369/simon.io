@@ -56,6 +56,30 @@ footer{
   font-size: 18px;
   font-family: 'Press Start 2P', cursive;
 }
+.virtual-key {
+  position: fixed;
+  /* bottom: 20px; */
+  left: 50%;
+  transform: translateX(-50%);
+  /* z-index: 9999; */
+  padding: 10px 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #011F3F;
+  color: #fff;
+}
+
+.hidden {
+  display: none;
+}
+@media only screen and (min-width: 767px) {
+  /* Hide the virtual key on larger screens */
+  .virtual-key {
+    display: none;
+  }
+
+/* Style the virtual key */
+}
 @media (max-width: 767px) {
   .container{
     width: 90%;
@@ -69,6 +93,7 @@ footer{
     height: 70px;
     width: 70px;
   }
+
   footer{
     margin-top: 20%;
   }
