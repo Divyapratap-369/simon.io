@@ -21,6 +21,25 @@ $(".btn").click(function(){
     checkAnswer(userClickedPattern.length-1);
 });
 
+$(document).ready(function() {
+  // Show the virtual key on small screens
+  if ($(window).width() < 768) {
+    $('.virtual-key').show();
+    $('#level-title').text("Press the Click Me Button to Start");
+  }
+
+  // Define the behavior of the virtual key
+  $('#virtual-btn').on('click', function() {
+    if(!started)
+    {
+        nextSequence();
+        started = true;
+    }
+    console.log('The virtual key was clicked');
+  });
+});
+
+
 function checkAnswer(currentLevel){
     if(gamePattern[currentLevel]===userClickedPattern[currentLevel]){
         console.log("success");
@@ -78,3 +97,4 @@ function startOver(){
     started = false;
     
 }
+
