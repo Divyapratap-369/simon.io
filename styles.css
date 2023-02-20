@@ -56,6 +56,15 @@ footer{
   font-size: 18px;
   font-family: 'Press Start 2P', cursive;
 }
+#rules{
+  font-size: 10px;
+  margin-top: 60px;
+  text-align: justify;
+  /* letter-spacing: 1px; */
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
 .virtual-key {
   position: fixed;
   /* bottom: 20px; */
